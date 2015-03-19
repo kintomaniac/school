@@ -12,3 +12,7 @@
 
         cd school
         pip install -r requirements.txt
+
++ Running the application:
+
+        python school.py
