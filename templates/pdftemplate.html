@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Student Information</h1>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table table-bordered">
+                <thead>
+                <th>ID</th>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Standard</th>
+                </thead>
+                <tbody>
+                {% for object in object_list %}
+                    <tr>
+                        <td>{{ object.id }}</td>
+                        <td>{{ object.student_id }}</td>
+                        <td>{{ object.student_name }}</td>
+                        <td>{{ object.student_standard }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
